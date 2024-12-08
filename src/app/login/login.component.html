@@ -1,0 +1,21 @@
+<!-- login.component.html -->
+<form (ngSubmit)="login(username.value, password.value)">
+    <!-- Campo de Usuario -->
+    <input 
+      type="text" 
+      placeholder="Usuario" 
+      #username 
+      required 
+    />
+    
+    <!-- Campo de Contraseña -->
+    <input 
+      type="password" 
+      placeholder="Contraseña" 
+      #password 
+      required 
+    />
+    
+    <!-- Botón de Iniciar Sesión -->
+    <button type="submit">Iniciar Sesión</button>
+</form>
